@@ -53,7 +53,7 @@ model
 ```
 
 ## Inference for unpaired data
-To generate low-light images using the pre-trained model in [here](), configure the `cfg/test/test_unpaired.yaml` file:
+To generate low-light images using the pre-trained model, configure the `cfg/test/test_unpaired.yaml` file:
 ```
 test_folder_unpaired: "WHERE THE FOLDER BEING TEST"
 results_folder_unpaired: './results'
