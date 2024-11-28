@@ -17,6 +17,7 @@ MAX_JOBS=4 pip install flash-attn==2.2.5 --no-build-isolation
 ```
 
 After installing the required packages, activate the environment by running:
+
 ```conda activate N2L```
 
 # Data Preparation 
@@ -48,7 +49,7 @@ data
 ```
 # Inference
 ## Pre-trained model
-Pre-trained model can be downloaded from [here](). 
+Pre-trained model can be downloaded from [here](https://1drv.ms/f/s!AvJJYu8Th24UjNAWtkRlvfbZ2hnjuw?e=cYheB5). 
 The pre-trained model is required to be placed in the folder `model/` with the following hararchy:
 ```
 model
