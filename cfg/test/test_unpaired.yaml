@@ -1,0 +1,68 @@
+#### Test Settings
+on_diffusion_from_scratch: True
+test_folder_unpaired: "WHERE THE FOLDER BEING TEST"
+results_folder_unpaired: './results'
+diffusion_path:  "model/final.ckpt"
+
+# hardware setting
+devices: 1
+
+#debug
+fast_dev_run: False  # use for debug if int or True are set, False for normal training
+flash_attn_valid_switch: False
+
+# pytorch lightning
+precision: 'bf16'  # half precision, or mixed precision
+accelerator: 'auto'
+seed: 3407
+
+# model
+mul: 16 
+in_dim: 6
+unet_outdim: 3
+dim_mults: !!python/tuple [1, 2, 2, 4, 4]
+use_attn: False
+use_ViT: True
+unet_dim: 64
+use_in: True
+weight_init: True
+stronger_cond: False 
+use_wn: True
+
+dim_adjust_factor: 1.5
+num_blocks: [1,3,6,12] #[2,4,8,16]
+heads: [2,4,8,16]
+ffn_expansion_factor: 2.66
+bias: True
+LayerNorm_type: 'WithBias'
+skip: False
+
+# encoder
+cond_in_dim: 12
+cond_on_res: False
+
+# Diffusion 
+return_all_timesteps: False
+clip_denoised: True  # clip when reverse process,
+rescale_ratio: 1.0
+timesteps: 100
+on_res: False
+use_center: True
+use_center_sampler: True
+on_cond: 'img_lr'  # img_c, img_lr or h(img_lr)
+sample_mode: 'ddpm'
+lpips_type: 'vgg' #'alex', 'vgg', 'squeeze'
+
+# dataset
+scale_factor: 1
+
+num_workers: 32
+color_space: 'rgb'
+image_size: 192
+pin_memory: False
+persistent_workers: False
+batch_size: 16
+switch_normal_low: True
+paddingMode: True # if null, then center crop applied
+
+
