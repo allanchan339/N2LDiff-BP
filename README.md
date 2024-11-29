@@ -64,23 +64,23 @@ results_folder_unpaired: './results'
 ```
 and run:
 ```
-python test_unpaired.py --config cfg/test/test_unpaired.yaml
+python test_unpaired.py --cfg cfg/test/test_unpaired.yaml
 ```
 
 ## Evaluation for metrics on LOL Dataset
 run: 
 ```
-python test_metrics.py --config cfg/test/test.yaml
+python test.py --cfg cfg/test/test.yaml
 ```
 
-To train the model, run the following command:
-```
-python train.py --cfg cfg/train/train.yaml
-```
+## Evaluation Results 
+<img width="1162" alt="image" src="https://github.com/user-attachments/assets/ebb81f38-b660-41f5-ba6b-b04d618dc0d8">
+<img width="1180" alt="image" src="https://github.com/user-attachments/assets/51aadb6a-7c59-4a84-8753-b486869331a4">
+
 # Training 
 To train the model, run the following command:
 ```
-python train.py --cfg cfg/train/FS/train.yaml
+python train.py --cfg cfg/train/train.yaml
 ```
 
 # LOL-Diff Dataset
