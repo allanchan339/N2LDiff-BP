@@ -49,7 +49,7 @@ data
 ```
 # Inference
 ## Pre-trained model
-Pre-trained model can be downloaded from [here](https://1drv.ms/f/s!AvJJYu8Th24UjNAWtkRlvfbZ2hnjuw?e=cYheB5). 
+Pre-trained model can be downloaded from [here](https://1drv.ms/f/s!AvJJYu8Th24UjNAW5lfkuKZvA9vI6Q?e=g3RGi9). 
 The pre-trained model is required to be placed in the folder `model/` with the following hararchy:
 ```
 model
@@ -84,14 +84,14 @@ python train.py --cfg cfg/train/FS/train.yaml
 ```
 
 # LOL-Diff Dataset
-In this paper, we have also proposed the LOL-Diff dataset. The dataset can be downloaded from [here]().
+In this paper, we have also proposed the LOL-Diff dataset. The dataset can be downloaded from [here](https://1drv.ms/f/s!AvJJYu8Th24UjNAXFOnc7GAvJBAlqw?e=zwE1UX).
 The dataset is organized in the following way:
 ```
 LOLDiff
-    - low_res
+    - low_res (one zip file with 919MB)
         - train 
         - test
-    - 4K
+    - 4K (120GB with 30 split 7z file)
         - train
         - test 
 ```
