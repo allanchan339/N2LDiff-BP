@@ -1,10 +1,20 @@
-# Back Projection Generative Strategy for Low and Normal Light Image Pairs with Enhanced Statistical Fidelity and Diversity
+# Back Projection Generative Strategy for Low and Normal Light Image Pairs with Enhanced Statistical Fidelity and Diversity (TCE'24)
 By Cheuk-Yiu Chan, Wan-Chi Siu, Yuk-Hee Chan and H. Anthony Chan
 
 <img width="1174" alt="image" src="https://github.com/user-attachments/assets/07607520-7e92-407f-82e0-f0a96956e471">
 
 # BibTex
-TBC by IEEE Explore
+@ARTICLE{10794693,
+  author={Chan, Cheuk-Yiu and Siu, Wan-Chi and Chan, Yuk-Hee and Chan, H. Anthony},
+  journal={IEEE Transactions on Consumer Electronics}, 
+  title={Back Projection Generative Strategy for Low and Normal Light Image Pairs With Enhanced Statistical Fidelity and Diversity}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Diffusion models;Image enhancement;Data models;Deep learning;Image color analysis;Lighting;Colored noise;Training data;Mathematical models;Image synthesis;Low Light Image Enhancement;Image Synthesis;Generative Model;Diffusion;Data Augmentation},
+  doi={10.1109/TCE.2024.3516366}}
+
 
 # Abstract
   Low light image enhancement (LLIE) using supervised deep learning is limited by the scarcity of matched low/normal light image pairs. We propose Back Projection Normal-to-Low Diffusion Model (N2LDiff-BP), a novel diffusion-based generative model that realistically transforms normal-light images into diverse low-light counterparts. By injecting noise perturbations over multiple timesteps, our model synthesizes low-light images with authentic noise, blur, and color distortions. We introduce innovative architectural components - Back Projection Attention, BP$^2$ Feedforward, and BP Transformer Blocks - that integrate back projection to model the narrow dynamic range and nuanced noise of real low-light images. Experiment and results show N2LDiff-BP significantly outperforms prior augmentation techniques, enabling effective data augmentation for robust LLIE. We also introduce LOL-Diff, a large-scale synthetic low-light dataset. Our novel framework, architectural innovations, and dataset advance deep learning for low-light vision tasks by addressing data scarcity. N2LDiff-BP establishes a new state-of-the-art in realistic low-light image synthesis for LLIE.
